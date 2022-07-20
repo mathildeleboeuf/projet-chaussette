@@ -3,10 +3,13 @@
 :root {
     --couleur-principale : #707070;
     --couleur-secondaire : #F4ECEC;
+    --police-principale : 'Varela', sans-serif;
 
 }
 
-
+* {
+    overflow-x : hidden;
+}
 
 .bordure {
     border: 1px solid black;
@@ -16,12 +19,25 @@
     height: 300px;
 }
 
+.height2 {
+    height: 100vh;
+}
+
+.height3 {
+    height: 20vh;
+}
+
+.height4 {
+    height: 80vh;
+    width: 100%;
+}
+
 .btn-header {
     background-color: var(--couleur-secondaire);
     color: #707070;
     width: 20%;
     height: 52px;
-    font-family: 'Varela', sans-serif;
+    font-family: var(--police-principale);
     font-size: 26px;
     border-radius: 25px;
     border: 0.5px solid #707070;
@@ -42,9 +58,7 @@
 
 .aside {
     background-color: var(--couleur-principale);
-    text-align: center;
-    height: 100vh;
-  
+    text-align: center;  
 }
 
 .aside img {
@@ -54,7 +68,7 @@
 
 .aside p {
     color: var(--couleur-secondaire);
-    font-size:'Varela', sans-serif;
+    font-size: var(--police-principale);
     width: fit-content;
     margin: 0 auto;
     font-size: 25px;
@@ -63,5 +77,19 @@
 
 .aside p:hover {
     color: #D7ADAD;
-    ;
 }
+
+.footerRow {
+    width: 100vw;
+}
+ 
+footer p {
+    font-family: var(--police-principale);
+    color: var(--couleur-principale);
+    text-align: center;
+}
+
+.icon-block-background {
+    background: linear-gradient(to bottom right, var(--couleur-secondaire) 50%, white 50%);}
+
+
